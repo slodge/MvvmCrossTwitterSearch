@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:local="http://schemas.android.com/apk/res/com.cirrious.twittersearch"
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res/com.cirrious.twittersearch"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -28,14 +29,16 @@
       android:textColor="#ffffffff"
       local:MvxBind="{'Text':{'Path':'Author'}}"
         />
+    
     <TextView
      android:id="@+id/TimeTextView"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
      android:textSize="10dip"
-      android:textColor="#ffa0a0a0"
-      local:MvxBind="{'Text':{'Path':'Timestamp','Converter':'TimeAgo'}}"
-       />
+     android:textColor="#ffa0a0a0"
+     local:MvxBind="{'Text':{'Path':'Timestamp','Converter':'TimeAgo'}}"
+     />
+    
     <TextView
       android:id="@+id/ContentTextView"
       android:layout_width="wrap_content"

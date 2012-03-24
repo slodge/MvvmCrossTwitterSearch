@@ -10,7 +10,6 @@ namespace TwitterSearch.UI.Console.Views
         {
             base.OnViewModelChanged();
             ViewModel.PropertyChanged += (sender, args) => RefreshDisplay();
-
             RefreshDisplay();
         }
 

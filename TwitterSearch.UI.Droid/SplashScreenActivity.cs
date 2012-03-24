@@ -13,11 +13,6 @@ namespace TwitterSearch.UI.Droid
         {
         }
 
-        protected override void OnCreate(Android.OS.Bundle bundle)
-        {
-            base.OnCreate(bundle);
-        }
-
         protected override MvxBaseAndroidSetup CreateSetup()
         {
             return new Setup(ApplicationContext);

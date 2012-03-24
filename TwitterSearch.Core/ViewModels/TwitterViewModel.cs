@@ -18,9 +18,11 @@ namespace TwitterSearch.Core.ViewModels
             StartSearch(searchTerm);
         }
 
-        private ITwitterSearchProvider TwitterSearchProvider
+        private bool _isSearching;
+        public bool IsSearching
         {
-            get { return this.GetService<ITwitterSearchProvider>(); }
+            get { return _isSearching; }
+            set { _isSearching = value; FirePropertyChanged("IsSearching"); }
         }
 
         private IEnumerable<Tweet> _tweets;
@@ -30,11 +32,9 @@ namespace TwitterSearch.Core.ViewModels
             set { _tweets = value; FirePropertyChanged("Tweets"); }
         }
 
-        private bool _isSearching;
-        public bool IsSearching
+        private ITwitterSearchProvider TwitterSearchProvider
         {
-            get { return _isSearching; }
-            set { _isSearching = value; FirePropertyChanged("IsSearching"); }
+            get { return this.GetService<ITwitterSearchProvider>(); }
         }
 
         private void StartSearch(string searchTerm)

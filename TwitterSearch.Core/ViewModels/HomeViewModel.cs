@@ -24,7 +24,7 @@ namespace TwitterSearch.Core.ViewModels
         {
             get
             {
-                return new MvxRelayCommand(() => RequestNavigate<TwitterViewModel>(new { searchTerm = SearchText }));
+                return new MvxRelayCommand(DoSearch);
             }
         }
 
@@ -36,9 +36,14 @@ namespace TwitterSearch.Core.ViewModels
             }
         }
 
+        private void DoSearch()
+        {
+            RequestNavigate<TwitterViewModel>(new { searchTerm = SearchText });
+        }
+
         private void PickRandomSearchTerm()
         {
-            var items = new[] { "MvvmCross", "WP7", "MonoTouch", "MonoDroid", "mvvm" };
+            var items = new[] { "MvvmCross", "WP7", "MonoTouch", "MonoDroid", "mvvm", "kittens" };
             var r = new Random();
             var originalText = SearchText;
             var newText = originalText;

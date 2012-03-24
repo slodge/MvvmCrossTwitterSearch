@@ -13,17 +13,15 @@
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="False">
 
-    <!--LayoutRoot contains the root grid where all other page content is placed-->
     <Grid x:Name="LayoutRoot">
         <StackPanel>
             <Grid>
                 <TextBlock Text="Search for..."></TextBlock>
-                <HyperlinkButton Content="(random)" Command="{Binding PickRandomCommand}" HorizontalAlignment="Right"></HyperlinkButton>
+                <HyperlinkButton Content="(random)" Command="{Binding PickRandomCommand}" HorizontalAlignment="Right"/>
             </Grid>
             <TextBox Text="{Binding SearchText, Mode=TwoWay}"></TextBox>            
             <Button Content="Go!" Command="{Binding SearchCommand}"></Button>
         </StackPanel>
-
     </Grid>
 
 </Views:BaseHomeView>

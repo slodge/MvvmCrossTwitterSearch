@@ -11,7 +11,12 @@ namespace TwitterSearch.UI.Touch.Views
     public class TwitterView
         : MvxBindingTouchTableViewController<TwitterViewModel>
     {
-        const string CellBindingText = "{'TitleText':{'Path':'Author'},'DetailText':{'Path':'Title'},'HttpImageUrl':{'Path':'ProfileImageUrl'}}";
+        const string CellBindingText = @"
+                        {
+                           'TitleText':{'Path':'Author'},
+                           'DetailText':{'Path':'Title'},
+                           'HttpImageUrl':{'Path':'ProfileImageUrl'}
+                        }";
 		
 		private UIActivityIndicatorView _activityView;
 		
@@ -44,7 +49,6 @@ namespace TwitterSearch.UI.Touch.Views
 		                         {
 		                             {source, "{'ItemsSource':{'Path':'Tweets'}}"},
 									 {_activityView, "{'Hidden':{'Path':'IsSearching','Converter':'InvertedVisibility'}}"},
-									 //{TableView, "{'Hidden':{'Path':'IsSearching','Converter':'Visibility'}}"},
 		                         });
             TableView.Source = source;
 			TableView.ReloadData();

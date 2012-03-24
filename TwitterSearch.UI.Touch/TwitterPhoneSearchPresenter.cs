@@ -3,10 +3,10 @@ using MonoTouch.UIKit;
 
 namespace TwitterSearch.UI.Touch
 {
-    public class TwitterSearchPresenter 
+    public class TwitterPhoneSearchPresenter 
         : MvxModalSupportTouchViewPresenter
 	{
-        public TwitterSearchPresenter(UIApplicationDelegate applicationDelegate, UIWindow window)
+        public TwitterPhoneSearchPresenter(UIApplicationDelegate applicationDelegate, UIWindow window)
 			: base(applicationDelegate, window)
 		{
 		}

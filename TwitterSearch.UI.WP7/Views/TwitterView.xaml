@@ -14,7 +14,6 @@
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="False">
 
-    <!--LayoutRoot contains the root grid where all other page content is placed-->
     <Grid x:Name="LayoutRoot">
 
         <toolkit:PerformanceProgressBar
@@ -28,7 +27,5 @@
                         ItemTemplate="{StaticResource TwitterItemTemplate}">
         </ListBox>
     </Grid>
-
-    <!--Panorama-based applications should not show an ApplicationBar-->
 
 </Views:BaseTwitterView>

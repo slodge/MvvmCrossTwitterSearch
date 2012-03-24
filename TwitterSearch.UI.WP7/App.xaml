@@ -35,13 +35,13 @@
                                         Height="55"
                                         HorizontalAlignment="Left"/>
                 <TextBlock
-                                        Grid.Row="2"
-                                        Grid.Column="1"
-                                        Foreground="{StaticResource PhoneSubtleBrush}"
-                                        Margin="0,12,0,0"
-                                        TextAlignment="Right"
-                                        Style="{StaticResource PhoneTextSmallStyle}"
-                                        Text="{Binding Timestamp,Converter={StaticResource TimeAgo}}" />
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Foreground="{StaticResource PhoneSubtleBrush}"
+                        Margin="0,12,0,0"
+                        TextAlignment="Right"
+                        Style="{StaticResource PhoneTextSmallStyle}"
+                        Text="{Binding Timestamp,Converter={StaticResource TimeAgo}}" />
                 <TextBlock
                                         Grid.Row="0"
                                         Grid.Column="1"

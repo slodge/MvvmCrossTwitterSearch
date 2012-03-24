@@ -59,18 +59,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StartNavigation.cs" />
-    <Compile Include="TwitterSearchApp.cs" />
-    <Compile Include="Converters\Converters.cs" />
-    <Compile Include="Converters\TimeAgoConverter.cs" />
-    <Compile Include="Models\AtomConst.cs" />
-    <Compile Include="Interfaces\ITwitterSearchProvider.cs" />
-    <Compile Include="Models\Tweet.cs" />
-    <Compile Include="Models\TwitterSearch.cs" />
-    <Compile Include="Models\TwitterSearchProvider.cs" />
+    <Compile Include="Converters\Converters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Converters\TimeAgoConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\ITwitterSearchProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\AtomConst.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Tweet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\TwitterSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\TwitterSearchProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\HomeViewModel.cs" />
-    <Compile Include="ViewModels\TwitterViewModel.cs" />
+    <Compile Include="StartNavigation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TwitterSearchApp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\HomeViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\TwitterViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />

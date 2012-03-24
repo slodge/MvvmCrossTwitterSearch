@@ -9,6 +9,7 @@ namespace TwitterSearch.UI.Console.Views
     {
         protected override void OnViewModelChanged()
         {
+            base.OnViewModelChanged();
             ViewModel.PropertyChanged += (sender, args) => RefreshDisplay();
             RefreshDisplay();
         }
